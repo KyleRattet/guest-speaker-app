@@ -1,14 +1,16 @@
 language: node_js
-
 node_js:
-  - '4.1'
-  - '4.0'
-  - '0.12'
-  - '0.11'
-
+- '4.1'
+- '4.0'
+- '0.12'
+- '0.11'
 before_script:
-  - npm install -g mocha
-
+- npm install -g mocha
 script: mocha
-
-
+deploy:
+  provider: heroku
+  api_key:
+    secure: PKCERHkwzjfdchKagV90qAxKExgTl5iQ6iM0TlFSNtwcgzOIO1y54aZY8lDSbIm0MTYCO4CmA7meGg56zdqmnWedMxQzBLXbIt2jHrcAkMfW3LkMfYcmclHlufzG20lk5sRJh9Z0+iZwB5oqLTpn+GBhURGWXj6PAQASU3p3btMJT+oYoDH3WwOkvW2yurVbocp2QTEqL8hYN4fU20c7jwH91QLyNpwIWLcvTIZ0KwtHKil1ajZkE0XDGR5JnRDqSPriF2vci2hO2vSgtOXyQt1PO/CgAkRPXKaxZ59C9TQKfxgqN65O6GbAis11XGDkkPwZhZq952kBVt6ONfc07pnzfkxolDvD9jt1RLRVkoJs+opw6Gr9wuPbx/kPSrWNCrMqJxt3cZCGlj5bpQvNNI3MhfBsnufOVWUAuqF69vqgGAOSRfzAEA/IWRMGqTLv7ypNQDEAT9KXxC5ziG/H/CChNy4LcGYi8vWKtoJhD3di9BM+b6F2tw2sDW9SiyNgEzatnOZq59c00OpFHYYs3IyMLJ3G9n/zKdAm6nSH0J9Ivi2uM0uoHaylNRYSsAhZtVdUwV8Uv/7joFusKnir9pjwrs5wNBLnR22vtD/3672/ro6e7/ZFwWrX5doC6A18jolnuicegtNvATw4/4HuySIWzsbPhyHQgAgE/LdEa5s=
+  app: aqueous-dusk-4154
+  on:
+    repo: KyleRattet/guest-speaker-app
