@@ -14,6 +14,7 @@ describe('server router', function () {
     .get('/')
     .end(function (err, res) {
       res.should.have.status(200);
+      res.text.should.include('Welcome to Express');
       done();
     });
   });
