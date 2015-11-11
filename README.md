@@ -3,6 +3,7 @@ Guest Speaker App
 
 [![Build Status](https://travis-ci.org/KyleRattet/guest-speaker-app.svg?branch=master)](https://travis-ci.org/KyleRattet/guest-speaker-app)
 
+[![Coverage Status](https://coveralls.io/repos/KyleRattet/guest-speaker-app/badge.svg?branch=master&service=github)](https://coveralls.io/github/KyleRattet/guest-speaker-app?branch=master)
 
 
 ##User Stories
