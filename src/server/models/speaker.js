@@ -11,7 +11,32 @@ module.exports = function(sequelize, DataTypes) {
       allowNull: false,
       required: true
     },
+    email: {
+      type: DataTypes.STRING,
+      allowNull: false,
+      required: true
+    },
+    topic: {
+      type: DataTypes.STRING,
+      allowNull: false,
+      required: true
+    },
+    role: {
+      type: DataTypes.STRING,
+      allowNull: false,
+      required: true
+    },
+    speaking_date: {
+      type:DataTypes.DATE,
+      allowNull: true,
+      required: true
+    },
     company: {
+      type:DataTypes.STRING,
+      allowNull: false,
+      required: true
+    },
+    gitHub: {
       type:DataTypes.STRING,
       allowNull: false,
       required: true
